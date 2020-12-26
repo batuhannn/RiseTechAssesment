@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Common.Models.DTO;
 using Common.Services.Contracts;
+using Core.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -27,6 +28,12 @@ namespace CommunicationInfoApi.Controllers
         public void DeleteCommunicationInfos(int communicationId)
         {
             _communicationInfoService.CommunicationInfosDeleteFromUser(communicationId); ;
+        }
+
+        [HttpPost]
+        public void AddCommunicationInfo(int userIdToAddInformation , CommunicationInfo communicationInfo)
+        {
+            _communicationInfoService.CommunicationInfosAddToUser(userIdToAddInformation, communicationInfo);
         }
     }
 }

@@ -21,11 +21,11 @@ namespace Common.Services
             _dbContext = dbContext;
             _mapper = mapper;
         }
-        public void CommunicationInfosAddToUser(User user, CommunicationInfo communicationInfo)
+        public void CommunicationInfosAddToUser(int userIdToAddInformation, CommunicationInfo communicationInfo)
         {
             try
             {
-                var communicationInfoToUpdate = _dbContext.CommunicationInfos.Where(x => x.UserId == user.UserId).FirstOrDefault();
+                var communicationInfoToUpdate = _dbContext.CommunicationInfos.Where(x => x.UserId == userIdToAddInformation).FirstOrDefault();
 
                 if (communicationInfoToUpdate == null)
                 {
