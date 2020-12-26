@@ -7,7 +7,7 @@ namespace Common.Models.DTO
 {
     public class CommunicationInfoDTO
     {
-        //public int CommunicationInfoId { get; set; }
+        public int CommunicationInfoId { get; set; }
         public int TelephoneNumber { get; set; }
 
         public string Mail { get; set; }

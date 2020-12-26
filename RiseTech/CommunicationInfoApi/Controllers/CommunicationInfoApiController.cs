@@ -22,6 +22,11 @@ namespace CommunicationInfoApi.Controllers
         public async Task<List<CommunicationInfoDTO>> GetCommunicationInfos() 
         {
             return await _communicationInfoService.GetCommunicationInfosList();
-        } 
+        }
+        [HttpDelete("{communicationId}")]
+        public void DeleteCommunicationInfos(int communicationId)
+        {
+            _communicationInfoService.CommunicationInfosDeleteFromUser(communicationId); ;
+        }
     }
 }
