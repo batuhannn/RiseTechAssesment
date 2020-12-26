@@ -1,0 +1,8 @@
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Common.Services.deps.json
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Common.Services.dll
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Common.Services.csprojAssemblyReference.cache
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Common.Services.AssemblyInfoInputs.cache
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Common.Services.AssemblyInfo.cs
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Common.Services.runtimeconfig.json
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Common.Services.runtimeconfig.dev.json
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Common.Services.genruntimeconfig.cache

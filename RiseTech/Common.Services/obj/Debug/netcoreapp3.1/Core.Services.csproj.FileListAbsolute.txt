@@ -1,0 +1,17 @@
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Core.Services.deps.json
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Core.Services.dll
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Core.Services.pdb
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.AssemblyInfoInputs.cache
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.AssemblyInfo.cs
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.dll
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.pdb
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.csprojAssemblyReference.cache
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Common.Models.dll
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Core.Data.dll
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Core.Data.pdb
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Common.Models.pdb
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.csproj.CopyComplete
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Core.Services.runtimeconfig.json
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Core.Services.runtimeconfig.dev.json
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.csproj.CoreCompileInputs.cache
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.genruntimeconfig.cache
