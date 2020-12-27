@@ -1,13 +1,15 @@
-﻿using Core.Data.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Common.Models.DTO
+namespace Common.Models.ResponseModel
 {
-    public class CommunicationInfoDTO
+    public class UserWithCommunicationInfoResponseModel
     {
-        public int CommunicationInfoId { get; set; }
+        public string UserName { get; set; }
+        public string UserSurname { get; set; }
+        public string CompanyName { get; set; }
+
         public int TelephoneNumber { get; set; }
 
         public string Mail { get; set; }
@@ -18,10 +20,5 @@ namespace Common.Models.DTO
 
         public string Adress { get; set; }
 
-       // public User User { get; set; }
-        
-        public int UserId { get; set; }
-
-      
     }
 }

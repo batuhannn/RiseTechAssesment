@@ -21,16 +21,19 @@ namespace Common.Services
             _dbContext = dbContext;
             _mapper = mapper;
         }
-        public void CommunicationInfosAddToUser(int userIdToAddInformation, CommunicationInfo communicationInfo)
+        public void CommunicationInfosAddToUser (CommunicationInfo communicationInfo)
         {
             try
             {
-                var communicationInfoToUpdate = _dbContext.CommunicationInfos.Where(x => x.UserId == userIdToAddInformation).FirstOrDefault();
-
+                //New communication Info or not?
+                var communicationInfoToUpdate = _dbContext.CommunicationInfos.Where(x => x.UserId == communicationInfo.UserId).FirstOrDefault();
+                //New communication
                 if (communicationInfoToUpdate == null)
                 {
                     _dbContext.CommunicationInfos.Add(communicationInfo);
                 }
+
+                //Update information.
                 else
                 {
                     communicationInfoToUpdate.TelephoneNumber = communicationInfo.TelephoneNumber;
@@ -68,6 +71,7 @@ namespace Common.Services
             try
             {
                 var response = await _dbContext.CommunicationInfos.ToListAsync();
+                
                 return _mapper.Map<List<CommunicationInfoDTO>>(response);
 
             }

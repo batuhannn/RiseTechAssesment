@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Common.Models.DTO;
+using Common.Models.ResponseModel;
 using Common.Services.Contracts;
 using Core.Data;
 using Core.Data.Entities;
@@ -23,13 +24,16 @@ namespace Common.Services
         public void AddUser(User user)
         {
             try
-            {
+            {   //New user or not?
                 var userToUpdate = _dbContext.Users.Where(x => x.UserId == user.UserId).FirstOrDefault();
 
+                // New user
                 if (userToUpdate== null)
                 {
                     _dbContext.Users.Add(user);
                 }
+
+                //Update User
                 else
                 {
                     userToUpdate.UserName = user.UserName;
@@ -88,8 +92,31 @@ namespace Common.Services
             }
         }
 
+        public async Task<UserWithCommunicationInfoResponseModel> GetUserWithCommunicationInfo(int userId)
+        {
+            try
+            {
+                UserWithCommunicationInfoResponseModel model = new UserWithCommunicationInfoResponseModel();
+                //Find User
+                var user = await GetUserById(userId);
+                //Find User's Communication Information
+                var communicationInfo = await _dbContext.CommunicationInfos.Where(x => x.UserId == userId).FirstOrDefaultAsync();
+                model.UserName = user.UserName;
+                model.UserSurname = user.UserSurname;
+                model.CompanyName = user.CompanyName;
+                model.TelephoneNumber = communicationInfo.TelephoneNumber;
+                model.Mail = communicationInfo.Mail;
+                model.Longtitude = communicationInfo.Longtitude;
+                model.Latitude = communicationInfo.Latitude;
+                model.Adress = communicationInfo.Adress;
 
-
+                return _mapper.Map<UserWithCommunicationInfoResponseModel>(model);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
 

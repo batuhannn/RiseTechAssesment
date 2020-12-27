@@ -1,4 +1,5 @@
 ﻿using Common.Models.DTO;
+using Common.Models.ResponseModel;
 using Core.Data.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,5 +17,7 @@ namespace Common.Services.Contracts
         Task<List<UserDTO>> GetUserList();
 
         Task<UserDTO> GetUserById(int UserId);
+
+        Task<UserWithCommunicationInfoResponseModel> GetUserWithCommunicationInfo(int userId);
     }
 }

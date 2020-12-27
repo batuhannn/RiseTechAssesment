@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Common.Models.DTO;
+using Common.Models.ResponseModel;
 using Core.Data.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace Core.Services.Mappings
         {
             CreateMap<User, UserDTO>().ReverseMap();
             CreateMap<CommunicationInfo, CommunicationInfoDTO>().ReverseMap();
+            CreateMap<CommunicationInfo, UserWithCommunicationInfoResponseModel>().ReverseMap();
         }
   
     }

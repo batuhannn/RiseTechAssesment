@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Common.Models.DTO;
+using Common.Models.ResponseModel;
 using Common.Services.Contracts;
 using Core.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -27,10 +28,16 @@ namespace UserApi.Controllers
             return await _userService.GetUserList();
         }
 
-        [HttpGet ("{userID}")]
-        public async Task<UserDTO> GetUsersById(int userID)
+        //[HttpGet ("{userID}")]
+        //public async Task<UserDTO> GetUsersById(int userID)
+        //{
+        //    return await _userService.GetUserById(userID);
+        //}
+
+        [HttpGet("{userID}")]
+        public async Task<UserWithCommunicationInfoResponseModel> GetUserById(int userID)
         {
-            return await _userService.GetUserById(userID);
+            return await _userService.GetUserWithCommunicationInfo(userID);
         }
 
 

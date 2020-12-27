@@ -31,9 +31,9 @@ namespace CommunicationInfoApi.Controllers
         }
 
         [HttpPost]
-        public void AddCommunicationInfo(int userIdToAddInformation , CommunicationInfo communicationInfo)
+        public void AddCommunicationInfo(CommunicationInfo communicationInfo)
         {
-            _communicationInfoService.CommunicationInfosAddToUser(userIdToAddInformation, communicationInfo);
+            _communicationInfoService.CommunicationInfosAddToUser(communicationInfo);
         }
     }
 }
