@@ -35,6 +35,17 @@ namespace CommunicationInfoApi
             services.AddDbContext<GuideDbContext>(opt =>
             opt.UseNpgsql(Configuration.GetConnectionString("MyWebApiConection")));
 
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1",
+                    new Microsoft.OpenApi.Models.OpenApiInfo
+                    {
+                        Title = "CommunicationInfo API",
+                        Description = "CommunicationInfo for showing Swagger",
+                        Version = "v1"
+                    });
+            });
+
             var config = new AutoMapper.MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new DbMappings());
@@ -63,6 +74,12 @@ namespace CommunicationInfoApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(options => {
+
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "CommunicationInfo API");
             });
         }
     }

@@ -34,6 +34,16 @@ namespace UserApi
             services.AddDbContext<GuideDbContext>(opt =>
                   opt.UseNpgsql(Configuration.GetConnectionString("MyWebApiConection")));
 
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1",
+                    new Microsoft.OpenApi.Models.OpenApiInfo {
+                    Title="User API",
+                    Description="User API for showing Swagger",
+                    Version="v1"
+                    });
+            });
+
             var config = new AutoMapper.MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new DbMappings());
@@ -61,6 +71,12 @@ namespace UserApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(options => {
+
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "User API");
             });
         }
     }

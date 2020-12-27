@@ -61,7 +61,7 @@ namespace CommunicationInfoApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ApiResponseModel> AddCommunicationInfo(CommunicationInfo communicationInfo)
+        public async Task<ApiResponseModel> AddCommunicationInfo(CommunicationInfoDTO communicationInfo)
         {
             var response = new ApiResponseModel();
             try

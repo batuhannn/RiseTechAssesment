@@ -4,7 +4,6 @@ C:\Users\Batuhan\source\repos\RiseTech\Models\obj\Debug\netcoreapp3.1\Common.Mod
 C:\Users\Batuhan\source\repos\RiseTech\Models\obj\Debug\netcoreapp3.1\Common.Models.AssemblyInfoInputs.cache
 C:\Users\Batuhan\source\repos\RiseTech\Models\obj\Debug\netcoreapp3.1\Common.Models.AssemblyInfo.cs
 C:\Users\Batuhan\source\repos\RiseTech\Models\bin\Debug\netcoreapp3.1\Common.Models.pdb
-C:\Users\Batuhan\source\repos\RiseTech\Models\obj\Debug\netcoreapp3.1\Common.Models.csproj.CoreCompileInputs.cache
 C:\Users\Batuhan\source\repos\RiseTech\Models\obj\Debug\netcoreapp3.1\Common.Models.dll
 C:\Users\Batuhan\source\repos\RiseTech\Models\obj\Debug\netcoreapp3.1\Common.Models.pdb
 C:\Users\Batuhan\source\repos\RiseTech\Models\bin\Debug\netcoreapp3.1\Core.Data.dll
@@ -13,3 +12,4 @@ C:\Users\Batuhan\source\repos\RiseTech\Models\obj\Debug\netcoreapp3.1\Common.Mod
 C:\Users\Batuhan\source\repos\RiseTech\Models\bin\Debug\netcoreapp3.1\Common.Models.runtimeconfig.json
 C:\Users\Batuhan\source\repos\RiseTech\Models\bin\Debug\netcoreapp3.1\Common.Models.runtimeconfig.dev.json
 C:\Users\Batuhan\source\repos\RiseTech\Models\obj\Debug\netcoreapp3.1\Common.Models.genruntimeconfig.cache
+C:\Users\Batuhan\source\repos\RiseTech\Models\obj\Debug\netcoreapp3.1\Common.Models.csproj.CoreCompileInputs.cache

@@ -9,7 +9,7 @@ namespace Common.Services.Contracts
 {
     public interface ICommunicationInfoService
     {
-        Task CommunicationInfosAddToUser(CommunicationInfo communicationInfo);
+        Task CommunicationInfosAddToUser(CommunicationInfoDTO communicationInfo);
 
         Task CommunicationInfosDeleteFromUser(int communicationInfoId);
 

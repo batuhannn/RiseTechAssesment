@@ -13,5 +13,5 @@ C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\C
 C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.csproj.CopyComplete
 C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Core.Services.runtimeconfig.json
 C:\Users\Batuhan\source\repos\RiseTech\Common.Services\bin\Debug\netcoreapp3.1\Core.Services.runtimeconfig.dev.json
-C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.csproj.CoreCompileInputs.cache
 C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.genruntimeconfig.cache
+C:\Users\Batuhan\source\repos\RiseTech\Common.Services\obj\Debug\netcoreapp3.1\Core.Services.csproj.CoreCompileInputs.cache

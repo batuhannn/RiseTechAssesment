@@ -8,5 +8,5 @@ C:\Users\Batuhan\source\repos\RiseTech\Core.Data\obj\Debug\netcoreapp3.1\Core.Da
 C:\Users\Batuhan\source\repos\RiseTech\Core.Data\bin\Debug\netcoreapp3.1\Core.Data.pdb
 C:\Users\Batuhan\source\repos\RiseTech\Core.Data\obj\Debug\netcoreapp3.1\Core.Data.dll
 C:\Users\Batuhan\source\repos\RiseTech\Core.Data\obj\Debug\netcoreapp3.1\Core.Data.pdb
-C:\Users\Batuhan\source\repos\RiseTech\Core.Data\obj\Debug\netcoreapp3.1\Core.Data.csproj.CoreCompileInputs.cache
 C:\Users\Batuhan\source\repos\RiseTech\Core.Data\obj\Debug\netcoreapp3.1\Core.Data.csprojAssemblyReference.cache
+C:\Users\Batuhan\source\repos\RiseTech\Core.Data\obj\Debug\netcoreapp3.1\Core.Data.csproj.CoreCompileInputs.cache

@@ -21,7 +21,7 @@ namespace Common.Services
             _dbContext = dbContext;
             _mapper = mapper;
         }
-        public async Task AddUser(User user)
+        public async Task AddUser(UserDTO user)
         {
             try
             {   //New user or not?
@@ -30,7 +30,7 @@ namespace Common.Services
                 // New user
                 if (userToUpdate== null)
                 {
-                    await _dbContext.Users.AddAsync(user);
+                    await _dbContext.Users.AddAsync(_mapper.Map<User>(user));
                 }
 
                 //Update User

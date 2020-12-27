@@ -69,7 +69,7 @@ namespace UserApi.Controllers
 
 
         [HttpPost]
-        public async Task<ApiResponseModel> AddUser(User user)
+        public async Task<ApiResponseModel> AddUser(UserDTO user)
         {
             var response = new ApiResponseModel();
             try

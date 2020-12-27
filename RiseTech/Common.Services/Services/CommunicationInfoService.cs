@@ -21,7 +21,7 @@ namespace Common.Services
             _dbContext = dbContext;
             _mapper = mapper;
         }
-        public async Task CommunicationInfosAddToUser (CommunicationInfo communicationInfo)
+        public async Task CommunicationInfosAddToUser (CommunicationInfoDTO communicationInfo)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace Common.Services
                 //New communication
                 if (communicationInfoToUpdate == null)
                 {
-                    await _dbContext.CommunicationInfos.AddAsync(communicationInfo);
+                    await _dbContext.CommunicationInfos.AddAsync(_mapper.Map<CommunicationInfo>(communicationInfo));
                 }
 
                 //Update information.

@@ -10,7 +10,7 @@ namespace Common.Services.Contracts
 {
     public interface IUserService
     {
-        Task AddUser(User user);
+        Task AddUser(UserDTO user);
 
         Task DeleteUser(int UserId);
 

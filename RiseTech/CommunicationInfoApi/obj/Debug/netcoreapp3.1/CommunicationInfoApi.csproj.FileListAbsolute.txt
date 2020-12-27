@@ -36,8 +36,6 @@ C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\bin\Debug\netcoreapp
 C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.csprojAssemblyReference.cache
 C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.AssemblyInfoInputs.cache
 C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.AssemblyInfo.cs
-C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.csproj.CoreCompileInputs.cache
-C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.RazorTargetAssemblyInfo.cache
 C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.csproj.CopyComplete
 C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\staticwebassets\CommunicationInfoApi.StaticWebAssets.Manifest.cache
@@ -45,3 +43,10 @@ C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp
 C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.dll
 C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.pdb
 C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.genruntimeconfig.cache
+C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.csproj.CoreCompileInputs.cache
+C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Batuhan\source\repos\RiseTech\CommunicationInfoApi\obj\Debug\netcoreapp3.1\CommunicationInfoApi.MvcApplicationPartsAssemblyInfo.cache

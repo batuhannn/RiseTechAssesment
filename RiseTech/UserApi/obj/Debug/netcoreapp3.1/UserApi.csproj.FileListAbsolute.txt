@@ -27,8 +27,6 @@ C:\Users\Batuhan\source\repos\RiseTech\UserApi\bin\Debug\netcoreapp3.1\Common.Mo
 C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.csprojAssemblyReference.cache
 C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.AssemblyInfoInputs.cache
 C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.AssemblyInfo.cs
-C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.csproj.CoreCompileInputs.cache
-C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.RazorTargetAssemblyInfo.cache
 C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.csproj.CopyComplete
 C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.dll
@@ -45,3 +43,10 @@ C:\Users\Batuhan\source\repos\RiseTech\UserApi\bin\Debug\netcoreapp3.1\UserApi.p
 C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\staticwebassets\UserApi.StaticWebAssets.Manifest.cache
 C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\staticwebassets\UserApi.StaticWebAssets.xml
 C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.genruntimeconfig.cache
+C:\Users\Batuhan\source\repos\RiseTech\UserApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Batuhan\source\repos\RiseTech\UserApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Batuhan\source\repos\RiseTech\UserApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Batuhan\source\repos\RiseTech\UserApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.csproj.CoreCompileInputs.cache
+C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Batuhan\source\repos\RiseTech\UserApi\obj\Debug\netcoreapp3.1\UserApi.MvcApplicationPartsAssemblyInfo.cache
