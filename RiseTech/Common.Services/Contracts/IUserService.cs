@@ -10,14 +10,14 @@ namespace Common.Services.Contracts
 {
     public interface IUserService
     {
-        void AddUser(User user);
+        Task AddUser(User user);
 
-        void DeleteUser(int UserId);
+        Task DeleteUser(int UserId);
 
         Task<List<UserDTO>> GetUserList();
 
         Task<UserDTO> GetUserById(int UserId);
 
-        Task<UserWithCommunicationInfoResponseModel> GetUserWithCommunicationInfo(int userId);
+        Task<List<UserWithCommunicationInfoResponseModel>> GetUserWithCommunicationInfos(int userId);
     }
 }

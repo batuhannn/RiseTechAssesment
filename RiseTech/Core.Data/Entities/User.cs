@@ -13,13 +13,10 @@ namespace Core.Data.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
-        public string UserName { get; set; }
-        public string UserSurname { get; set; }
-        public string CompanyName { get; set; }
-        
-        public CommunicationInfo CommunicationInfo { get; set; }
-       
-
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string CompanyName { get; set; }        
+        public ICollection<CommunicationInfo> CommunicationInfo { get; set; }
      
     }
 

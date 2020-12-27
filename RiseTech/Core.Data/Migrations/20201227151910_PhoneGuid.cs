@@ -3,7 +3,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Core.Data.Migrations
 {
-    public partial class Guid : Migration
+    public partial class PhoneGuid : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,8 +13,8 @@ namespace Core.Data.Migrations
                 {
                     UserId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    UserName = table.Column<string>(type: "text", nullable: true),
-                    UserSurname = table.Column<string>(type: "text", nullable: true),
+                    Name = table.Column<string>(type: "text", nullable: true),
+                    Surname = table.Column<string>(type: "text", nullable: true),
                     CompanyName = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
@@ -26,18 +26,18 @@ namespace Core.Data.Migrations
                 name: "CommunicationInfos",
                 columns: table => new
                 {
-                    CommunicationInfoId = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    TelephoneNumber = table.Column<int>(type: "integer", nullable: false),
-                    Mail = table.Column<string>(type: "text", nullable: true),
+                    MobileNo = table.Column<int>(type: "integer", nullable: false),
+                    EMail = table.Column<string>(type: "text", nullable: true),
                     Longtitude = table.Column<int>(type: "integer", nullable: false),
                     Latitude = table.Column<int>(type: "integer", nullable: false),
-                    Adress = table.Column<string>(type: "text", nullable: true),
+                    Address = table.Column<string>(type: "text", nullable: true),
                     UserId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CommunicationInfos", x => x.CommunicationInfoId);
+                    table.PrimaryKey("PK_CommunicationInfos", x => x.Id);
                     table.ForeignKey(
                         name: "FK_CommunicationInfos_Users_UserId",
                         column: x => x.UserId,
@@ -49,8 +49,7 @@ namespace Core.Data.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_CommunicationInfos_UserId",
                 table: "CommunicationInfos",
-                column: "UserId",
-                unique: true);
+                column: "UserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

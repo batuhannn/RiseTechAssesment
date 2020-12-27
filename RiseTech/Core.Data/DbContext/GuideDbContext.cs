@@ -21,9 +21,9 @@ namespace Core.Data
 
  
 
-            modelBuilder.Entity<User>(entity =>
+            modelBuilder.Entity<CommunicationInfo>(entity =>
             {
-                entity.HasOne<CommunicationInfo>(x => x.CommunicationInfo).WithOne(c => c.User).HasForeignKey<CommunicationInfo>(c => c.UserId).IsRequired();
+                entity.HasOne<User>(x => x.User).WithMany(c => c.CommunicationInfo).HasForeignKey(c => c.UserId).IsRequired();
             });
 
 

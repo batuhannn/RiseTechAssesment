@@ -21,27 +21,28 @@ namespace Common.Services
             _dbContext = dbContext;
             _mapper = mapper;
         }
-        public void CommunicationInfosAddToUser (CommunicationInfo communicationInfo)
+        public async Task CommunicationInfosAddToUser (CommunicationInfo communicationInfo)
         {
             try
             {
                 //New communication Info or not?
-                var communicationInfoToUpdate = _dbContext.CommunicationInfos.Where(x => x.UserId == communicationInfo.UserId).FirstOrDefault();
+                var communicationInfoToUpdate = await _dbContext.CommunicationInfos.Where(x => x.Id == communicationInfo.Id).FirstOrDefaultAsync();
                 //New communication
                 if (communicationInfoToUpdate == null)
                 {
-                    _dbContext.CommunicationInfos.Add(communicationInfo);
+                    await _dbContext.CommunicationInfos.AddAsync(communicationInfo);
                 }
 
                 //Update information.
                 else
                 {
-                    communicationInfoToUpdate.TelephoneNumber = communicationInfo.TelephoneNumber;
-                    communicationInfoToUpdate.Mail = communicationInfo.Mail;
+                    communicationInfoToUpdate.MobileNo = communicationInfo.MobileNo;
+                    communicationInfoToUpdate.EMail = communicationInfo.EMail;
                     communicationInfoToUpdate.Longtitude = communicationInfo.Longtitude;
                     communicationInfoToUpdate.Latitude = communicationInfo.Latitude;
                 }
-                _dbContext.SaveChanges();
+                await _dbContext.SaveChangesAsync();
+                return;
 
             }
             catch (Exception)
@@ -51,13 +52,14 @@ namespace Common.Services
             }
         }
 
-        public void CommunicationInfosDeleteFromUser(int communicationInfoId)
+        public async Task CommunicationInfosDeleteFromUser(int communicationInfoId)
         {
             try
             {
-                var communicationInfoToDelete = _dbContext.CommunicationInfos.Where(x => x.CommunicationInfoId == communicationInfoId).FirstOrDefault();
+                var communicationInfoToDelete = await _dbContext.CommunicationInfos.Where(x => x.Id == communicationInfoId).FirstOrDefaultAsync();
                 _dbContext.CommunicationInfos.Remove(communicationInfoToDelete);
-                _dbContext.SaveChanges();
+                await _dbContext.SaveChangesAsync();
+                return;
             }
             catch (Exception)
             {

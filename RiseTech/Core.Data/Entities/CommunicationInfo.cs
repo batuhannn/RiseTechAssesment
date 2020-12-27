@@ -10,16 +10,16 @@ namespace Core.Data.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int CommunicationInfoId { get; set; }
-        public int TelephoneNumber { get; set; }
+        public int Id { get; set; }
+        public int MobileNo { get; set; }
 
-        public string Mail { get; set; }
+        public string EMail { get; set; }
 
         public int Longtitude { get; set; }
 
         public int Latitude { get; set; }
 
-        public string Adress { get; set; }
+        public string Address { get; set; }
 
         public User User { get; set; }
         public int UserId { get; set; }

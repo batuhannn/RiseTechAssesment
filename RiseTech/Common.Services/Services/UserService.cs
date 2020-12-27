@@ -21,26 +21,27 @@ namespace Common.Services
             _dbContext = dbContext;
             _mapper = mapper;
         }
-        public void AddUser(User user)
+        public async Task AddUser(User user)
         {
             try
             {   //New user or not?
-                var userToUpdate = _dbContext.Users.Where(x => x.UserId == user.UserId).FirstOrDefault();
+                var userToUpdate = await _dbContext.Users.Where(x => x.UserId == user.UserId).FirstOrDefaultAsync();
 
                 // New user
                 if (userToUpdate== null)
                 {
-                    _dbContext.Users.Add(user);
+                    await _dbContext.Users.AddAsync(user);
                 }
 
                 //Update User
                 else
                 {
-                    userToUpdate.UserName = user.UserName;
-                    userToUpdate.UserSurname = user.UserSurname;
+                    userToUpdate.Name = user.Name;
+                    userToUpdate.Surname = user.Surname;
                     userToUpdate.CompanyName = user.CompanyName;
                 }
-                _dbContext.SaveChanges();
+                await _dbContext.SaveChangesAsync();
+                return;
 
             }
             catch (Exception)
@@ -50,13 +51,14 @@ namespace Common.Services
             }
         }
 
-        public void DeleteUser(int UserId)
+        public async Task DeleteUser(int UserId)
         {
             try
             {
-                var userToDelete = _dbContext.Users.Where(x => x.UserId == UserId).FirstOrDefault();
+                var userToDelete = await _dbContext.Users.Where(x => x.UserId == UserId).FirstOrDefaultAsync();
                 _dbContext.Users.Remove(userToDelete);
-                _dbContext.SaveChanges();
+                await _dbContext.SaveChangesAsync();
+                return;
             }
             catch (Exception)
             {
@@ -92,25 +94,42 @@ namespace Common.Services
             }
         }
 
-        public async Task<UserWithCommunicationInfoResponseModel> GetUserWithCommunicationInfo(int userId)
+        public async Task<List<UserWithCommunicationInfoResponseModel>> GetUserWithCommunicationInfos(int userId)
         {
             try
             {
+                List<UserWithCommunicationInfoResponseModel> infosList = new List<UserWithCommunicationInfoResponseModel>();
                 UserWithCommunicationInfoResponseModel model = new UserWithCommunicationInfoResponseModel();
                 //Find User
                 var user = await GetUserById(userId);
-                //Find User's Communication Information
-                var communicationInfo = await _dbContext.CommunicationInfos.Where(x => x.UserId == userId).FirstOrDefaultAsync();
-                model.UserName = user.UserName;
-                model.UserSurname = user.UserSurname;
-                model.CompanyName = user.CompanyName;
-                model.TelephoneNumber = communicationInfo.TelephoneNumber;
-                model.Mail = communicationInfo.Mail;
-                model.Longtitude = communicationInfo.Longtitude;
-                model.Latitude = communicationInfo.Latitude;
-                model.Adress = communicationInfo.Adress;
+                if (user!=null)
+                {
+                    model.UserName = user.Name;
+                    model.UserSurname = user.Surname;
+                    model.CompanyName = user.CompanyName;
+                    //Find User's Communication Information
+                    var communicationInfo = await _dbContext.CommunicationInfos.Where(x => x.UserId == userId).ToListAsync();
+                    if (communicationInfo.Count != 0)
+                    {
+                        foreach (var item in communicationInfo)
+                        {
+                            model.MobileNo = item.MobileNo;
+                            model.EMail = item.EMail;
+                            model.Longtitude = item.Longtitude;
+                            model.Latitude = item.Latitude;
+                            model.Address = item.Address;
+                            infosList.Add(model);
+                        }
 
-                return _mapper.Map<UserWithCommunicationInfoResponseModel>(model);
+                    }
+                    else
+                    {
+                        infosList.Add(model);
+                    }
+                 
+
+                }
+                return _mapper.Map<List<UserWithCommunicationInfoResponseModel>>(infosList);
             }
             catch (Exception)
             {

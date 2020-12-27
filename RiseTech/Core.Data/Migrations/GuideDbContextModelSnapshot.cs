@@ -20,12 +20,15 @@ namespace Core.Data.Migrations
 
             modelBuilder.Entity("Core.Data.Entities.CommunicationInfo", b =>
                 {
-                    b.Property<int>("CommunicationInfoId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .UseIdentityByDefaultColumn();
 
-                    b.Property<string>("Adress")
+                    b.Property<string>("Address")
+                        .HasColumnType("text");
+
+                    b.Property<string>("EMail")
                         .HasColumnType("text");
 
                     b.Property<int>("Latitude")
@@ -34,19 +37,15 @@ namespace Core.Data.Migrations
                     b.Property<int>("Longtitude")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Mail")
-                        .HasColumnType("text");
-
-                    b.Property<int>("TelephoneNumber")
+                    b.Property<int>("MobileNo")
                         .HasColumnType("integer");
 
                     b.Property<int>("UserId")
                         .HasColumnType("integer");
 
-                    b.HasKey("CommunicationInfoId");
+                    b.HasKey("Id");
 
-                    b.HasIndex("UserId")
-                        .IsUnique();
+                    b.HasIndex("UserId");
 
                     b.ToTable("CommunicationInfos");
                 });
@@ -61,10 +60,10 @@ namespace Core.Data.Migrations
                     b.Property<string>("CompanyName")
                         .HasColumnType("text");
 
-                    b.Property<string>("UserName")
+                    b.Property<string>("Name")
                         .HasColumnType("text");
 
-                    b.Property<string>("UserSurname")
+                    b.Property<string>("Surname")
                         .HasColumnType("text");
 
                     b.HasKey("UserId");
@@ -75,8 +74,8 @@ namespace Core.Data.Migrations
             modelBuilder.Entity("Core.Data.Entities.CommunicationInfo", b =>
                 {
                     b.HasOne("Core.Data.Entities.User", "User")
-                        .WithOne("CommunicationInfo")
-                        .HasForeignKey("Core.Data.Entities.CommunicationInfo", "UserId")
+                        .WithMany("CommunicationInfo")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
