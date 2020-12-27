@@ -28,8 +28,11 @@ namespace Core.Data.Migrations
                     b.Property<string>("Adress")
                         .HasColumnType("text");
 
-                    b.Property<string>("Location")
-                        .HasColumnType("text");
+                    b.Property<int>("Latitude")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Longtitude")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Mail")
                         .HasColumnType("text");

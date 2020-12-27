@@ -35,7 +35,8 @@ namespace Common.Services
                 {
                     communicationInfoToUpdate.TelephoneNumber = communicationInfo.TelephoneNumber;
                     communicationInfoToUpdate.Mail = communicationInfo.Mail;
-                    communicationInfoToUpdate.Location = communicationInfo.Location;
+                    communicationInfoToUpdate.Longtitude = communicationInfo.Longtitude;
+                    communicationInfoToUpdate.Latitude = communicationInfo.Latitude;
                 }
                 _dbContext.SaveChanges();
 

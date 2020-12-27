@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{3094CB50-2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{42063A75-C004-4801-B3F2-9BF0F62E1FE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Models", "Models\Common.Models.csproj", "{92B45F0C-5124-487C-9CF0-73563A528E2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Models", "Models\Common.Models.csproj", "{92B45F0C-5124-487C-9CF0-73563A528E2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Data", "Core.Data\Core.Data.csproj", "{D5547DAD-EBBF-4B69-927A-2E4B1A16CD51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Data", "Core.Data\Core.Data.csproj", "{D5547DAD-EBBF-4B69-927A-2E4B1A16CD51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Services", "Common.Services\Core.Services.csproj", "{62B96E41-304F-4D0D-B65A-ACAE8C1221B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Services", "Common.Services\Core.Services.csproj", "{62B96E41-304F-4D0D-B65A-ACAE8C1221B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApi", "UserApi\UserApi.csproj", "{166517FD-3464-442E-B1BC-56C5DE6F663C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserApi", "UserApi\UserApi.csproj", "{166517FD-3464-442E-B1BC-56C5DE6F663C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationInfoApi", "CommunicationInfoApi\CommunicationInfoApi.csproj", "{18CE6440-CD2A-4439-8770-9A3EB9771AB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunicationInfoApi", "CommunicationInfoApi\CommunicationInfoApi.csproj", "{18CE6440-CD2A-4439-8770-9A3EB9771AB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

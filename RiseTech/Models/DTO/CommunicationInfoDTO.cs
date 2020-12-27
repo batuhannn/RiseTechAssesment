@@ -12,7 +12,9 @@ namespace Common.Models.DTO
 
         public string Mail { get; set; }
 
-        public string Location { get; set; }
+        public int Longtitude { get; set; }
+
+        public int Latitude { get; set; }
 
         public string Adress { get; set; }
 

@@ -1,0 +1,2 @@
+C:\Users\Batuhan\source\repos\RiseTech\UnitTestProject1\obj\Debug\UnitTestProject1.csprojAssemblyReference.cache
+C:\Users\Batuhan\source\repos\RiseTech\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CoreCompileInputs.cache
