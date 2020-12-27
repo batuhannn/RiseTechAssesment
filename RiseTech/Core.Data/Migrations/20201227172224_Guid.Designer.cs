@@ -9,8 +9,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Core.Data.Migrations
 {
     [DbContext(typeof(GuideDbContext))]
-    [Migration("20201227151910_PhoneGuid")]
-    partial class PhoneGuid
+    [Migration("20201227172224_Guid")]
+    partial class Guid
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -54,7 +54,7 @@ namespace Core.Data.Migrations
 
             modelBuilder.Entity("Core.Data.Entities.User", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .UseIdentityByDefaultColumn();
@@ -68,7 +68,7 @@ namespace Core.Data.Migrations
                     b.Property<string>("Surname")
                         .HasColumnType("text");
 
-                    b.HasKey("UserId");
+                    b.HasKey("Id");
 
                     b.ToTable("Users");
                 });

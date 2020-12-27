@@ -25,7 +25,7 @@ namespace Common.Services
         {
             try
             {   //New user or not?
-                var userToUpdate = await _dbContext.Users.Where(x => x.UserId == user.UserId).FirstOrDefaultAsync();
+                var userToUpdate = await _dbContext.Users.Where(x => x.Id == user.Id).FirstOrDefaultAsync();
 
                 // New user
                 if (userToUpdate== null)
@@ -55,7 +55,7 @@ namespace Common.Services
         {
             try
             {
-                var userToDelete = await _dbContext.Users.Where(x => x.UserId == UserId).FirstOrDefaultAsync();
+                var userToDelete = await _dbContext.Users.Where(x => x.Id == UserId).FirstOrDefaultAsync();
                 _dbContext.Users.Remove(userToDelete);
                 await _dbContext.SaveChangesAsync();
                 return;
@@ -71,7 +71,7 @@ namespace Common.Services
         {
             try
             {              
-                var response = await _dbContext.Users.Where(x => x.UserId == UserId).FirstOrDefaultAsync();
+                var response = await _dbContext.Users.Where(x => x.Id == UserId).FirstOrDefaultAsync();
                 return _mapper.Map<UserDTO>(response);
             }
             catch (Exception ex)
@@ -104,8 +104,8 @@ namespace Common.Services
                 var user = await GetUserById(userId);
                 if (user!=null)
                 {
-                    model.UserName = user.Name;
-                    model.UserSurname = user.Surname;
+                    model.Name = user.Name;
+                    model.Surname = user.Surname;
                     model.CompanyName = user.CompanyName;
                     //Find User's Communication Information
                     var communicationInfo = await _dbContext.CommunicationInfos.Where(x => x.UserId == userId).ToListAsync();

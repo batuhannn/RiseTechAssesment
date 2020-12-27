@@ -52,7 +52,7 @@ namespace Core.Data.Migrations
 
             modelBuilder.Entity("Core.Data.Entities.User", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .UseIdentityByDefaultColumn();
@@ -66,7 +66,7 @@ namespace Core.Data.Migrations
                     b.Property<string>("Surname")
                         .HasColumnType("text");
 
-                    b.HasKey("UserId");
+                    b.HasKey("Id");
 
                     b.ToTable("Users");
                 });

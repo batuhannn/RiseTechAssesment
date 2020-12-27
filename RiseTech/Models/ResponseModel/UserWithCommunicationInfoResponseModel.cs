@@ -7,8 +7,8 @@ namespace Common.Models.ResponseModel
 {
     public class UserWithCommunicationInfoResponseModel
     {
-        public string UserName { get; set; }
-        public string UserSurname { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
         public string CompanyName { get; set; }
         public int MobileNo { get; set; }
 
