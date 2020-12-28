@@ -22,7 +22,7 @@ namespace UserApi.Controllers
         }
 
         // GET: api/Users
-        [HttpGet]
+        [HttpGet("GetUsers")]
         public async Task<ApiResponseModel<List<UserDTO>>> GetUsers()
         {
             var response = new ApiResponseModel<List<UserDTO>>();
@@ -48,7 +48,7 @@ namespace UserApi.Controllers
         //    return await _userService.GetUserById(userID);
         //}
 
-        [HttpGet("{userID}")]
+        [HttpGet("GetUserById/{userID}")]
         public async Task<ApiResponseModel<List<UserWithCommunicationInfoResponseModel>>> GetUserById(int userID)
         {
             var response = new ApiResponseModel<List<UserWithCommunicationInfoResponseModel>>();
@@ -68,7 +68,7 @@ namespace UserApi.Controllers
         }
 
 
-        [HttpPost]
+        [HttpPost("AddUser")]
         public async Task<ApiResponseModel> AddUser(UserDTO user)
         {
             var response = new ApiResponseModel();
@@ -88,7 +88,7 @@ namespace UserApi.Controllers
           
         }
 
-        [HttpDelete ("{userID}")]
+        [HttpDelete ("DeleteUser/{userID}")]
         public async Task<ApiResponseModel> DeleteUser(int userID)
         {
             var response = new ApiResponseModel();

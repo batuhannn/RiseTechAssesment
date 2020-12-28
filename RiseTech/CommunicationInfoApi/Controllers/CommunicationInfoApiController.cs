@@ -20,7 +20,10 @@ namespace CommunicationInfoApi.Controllers
         {
             _communicationInfoService = communicationInfoService;
         }
-        [HttpGet]
+
+
+
+        [HttpGet("GetCommunicationInfos")]
         public async Task<ApiResponseModel<List<CommunicationInfoDTO>>> GetCommunicationInfos() 
         {
             var response = new ApiResponseModel<List<CommunicationInfoDTO>>();
@@ -39,7 +42,7 @@ namespace CommunicationInfoApi.Controllers
             return response;
 
         }
-        [HttpDelete("{communicationId}")]
+        [HttpDelete("DeleteCommunicationInfos/{communicationId}")]
 
         public async Task<ApiResponseModel> DeleteCommunicationInfos(int communicationId)
         {
@@ -60,7 +63,7 @@ namespace CommunicationInfoApi.Controllers
           
         }
 
-        [HttpPost]
+        [HttpPost("AddCommunicationInfo")]
         public async Task<ApiResponseModel> AddCommunicationInfo(CommunicationInfoDTO communicationInfo)
         {
             var response = new ApiResponseModel();
