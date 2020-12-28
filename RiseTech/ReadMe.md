@@ -1,11 +1,11 @@
 
-Database codefirst design şeklinde tasarlanmıştır(PostgreSQL). Oluşturmak için connection string'i güncelleyin. 
+Database codefirst design ÅŸeklinde tasarlanmÄ±ÅŸtÄ±r(PostgreSQL). OluÅŸturmak iÃ§in connection string'i gÃ¼ncelleyin. 
 
-Core.Data projesini default olarak seçip şu komutları Package Manager Console'a yazın.
-Add-Migration “Initial”
+Core.Data projesini default olarak seÃ§ip ÅŸu komutlarÄ± Package Manager Console'a yazÄ±n.
+Add-Migration â€œInitialâ€
 Update-database
 
--Dökümantasyon için swagger linkleri:
+-DÃ¶kÃ¼mantasyon iÃ§in swagger linkleri:
 "User Api Link"=https://localhost:44365/swagger/index.html
 "CommunicationInfoApi"=https://localhost:44381/swagger/index.html
 
